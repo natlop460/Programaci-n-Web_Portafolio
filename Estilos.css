@@ -1,0 +1,97 @@
+nav {
+  background-color: #d9b3ff;
+  display: flex;   /* Ayuda como se comporta un elemento en una página web, como separar los botones del navbar*/
+  padding: 10px;
+  border-radius: 10px;  /* Se curvean los extremos navbar*/
+  justify-content: space-between; /* SEPARA LOS BOTONES */
+  gap: 40px; /* MÁS ESPACIO */
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: #d9b3ff;
+  padding: 10px; /* más espacio entre el contenidoy el borde del botón*/
+  border-radius: 10px;/* borde del botón*/
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: ffdab9;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #ffdab9;
+}
+
+.fila {
+  display: flex;            /* Hace que los hijos estén en fila */
+  align-items: center;      /* Alinea verticalmente la imagen con el texto */
+  gap: 20px;                /* Espacio entre imagen y texto */
+}
+
+.imagen {
+  width: 150px;             /* Ajusta el tamaño de la imagen */
+  height: auto;             /* Mantiene proporción */
+}
+
+.texto {
+  flex: 1;                  /* Hace que el texto ocupe el resto del espacio */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  display: flex;          /* coloca las columnas una al lado de otra */
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer div {
+  text-align: center;
+}
+
+#habilidades {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.habilidades-contenedor {
+  display: flex;        /* coloca las habilidades en fila */
+  flex-wrap: wrap;      /* permite que bajen a otra línea */
+  justify-content: center;
+  gap: 15px;            /* espacio entre badges */
+  margin-top: 20px;
+}
+
+.habilidad {
+  background-color: #ffdab9; /* papaya */
+  padding: 10px 20px;
+  border-radius: 20px;  /* badge redondo */
+  font-weight: bold;
+  color: black;
+  border: 1px solid #e6a76d;
+  transition: transform 0.2s;
+}
+
+.habilidad:hover {
+  transform: scale(1.1); /* efecto al pasar el mouse */
+}
