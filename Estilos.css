@@ -1,3 +1,5 @@
+/*------------------------MENU DE NAVEGACION----------------------------------*/
+
 nav {
   background-color: #d9b3ff;
   display: flex;   /* Ayuda como se comporta un elemento en una página web, como separar los botones del navbar*/
@@ -7,54 +9,477 @@ nav {
   gap: 40px; /* MÁS ESPACIO */
 }
 
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: black;
-  background-color: #d9b3ff;
-  padding: 10px; /* más espacio entre el contenidoy el borde del botón*/
-  border-radius: 10px;/* borde del botón*/
+nav a { /*Cada elemento del menu*/
+  margin-right: 15px; /*Espacio vacio a la derecha del elemento*/
+  text-decoration: none; /*Sin decoracion como tachados o subrayados*/
+  color: black; /*Color de la letra en negro*/
+  background-color: #d9b3ff; /*Color de fondo de cada elemento*/
+  padding: 10px; /* más espacio entre el contenido y el borde del botón*/
+  border-radius: 10px;/* borde redondeado del botón*/
   
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: ffdab9;
+ul { /*Lista desordenada*/
+  list-style-type: none; /*Sin viñetas*/
+  margin: 10; /*Sin margenes a los costados*/
+  padding: 10; /*Espacio entre el contenido y el borde*/
+  overflow: hidden; /*El contenido que sobrepasa el tamaño del contenedor se oculta.*/
+  background-color: ffdab9; /*Color de fondo*/
 }
 
-ul li {
-  float: left;
+ul li {/*Cada elemento del menu*/
+  float: left;/*El elemento se mueve a la izquierda del contenedor.*/
 }
 
-ul li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
+ul li a { /*Enlaces o links*/
+  display: block; /*El elemento ocupa toda la línea*/
+  color: black; /*Color de la letra*/
+  text-align: center; /*Se alinea el contenido al centro*/
+  padding: 23px; /*Empuja el contenido hacia adentro.*/
   text-decoration: none;
+  font-size: 35px; /* Tamaño en píxeles */
 }
 
-ul li a:hover {
-  background-color: #ffdab9;
+ul li a:hover { /*Al mantener el mouse sobre el elemento a*/
+  background-color: #ffdab9; /*Se cambiael color de fondo del elemento*/
+  color: whitesmoke; /*Color de la letra*/
 }
 
-.fila {
-  display: flex;            /* Hace que los hijos estén en fila */
-  align-items: center;      /* Alinea verticalmente la imagen con el texto */
-  gap: 20px;                /* Espacio entre imagen y texto */
+ul li img {
+  display: block;           /* Ocupa toda la línea */
+  margin: 0 auto;           /* Centra la imagen dentro del li */
+  padding: 10px;            /* Espacio interno alrededor de la imagen */
+  width: 80px;              /* Tamaño uniforme de la imagen */
+  height: 80px;             /* Mantiene proporción cuadrada */
+  object-fit: contain;      /* Ajusta la imagen sin deformarla */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+  border-radius: 50%; /* Hace la imagen circular */
+  border: 4px solid #00bcd4;
 }
 
-.imagen {
-  width: 150px;             /* Ajusta el tamaño de la imagen */
-  height: auto;             /* Mantiene proporción */
+/* Efecto hover */
+ul li img:hover {
+  transform: scale(1.1);   /* Agranda la imagen ligeramente */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Sombra sutil */
+  cursor: pointer;          /* Cambia el cursor al pasar por encima */
 }
 
-.texto {
-  flex: 1;                  /* Hace que el texto ocupe el resto del espacio */
+/*------------------------PRESENTACION----------------------------------*/
+
+#Presentacion {
+  text-align: center;
+  padding: 50px 50px;
+  background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
 }
+
+/* Imagen de perfil */
+#Presentacion img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%; /* Hace la imagen circular */
+  border: 4px solid #00bcd4;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover sobre la imagen */
+#Presentacion img:hover {
+  transform: scale(1.5);
+}
+
+/* Nombre principal */
+#Presentacion h1 {
+  font-size: 2.2rem;
+  margin: 10px 0 5px;
+  color: #00796b;
+}
+
+/* Descripción corta */
+#Presentacion h2 {
+  font-size: 1.2rem;
+  margin: 5px 0 20px;
+  font-weight: 400;
+  color: #555;
+}
+
+/* Párrafo descriptivo */
+#Presentacion p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Botón CTA */
+#Presentacion .cta-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #00bcd4;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,188,212,0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover del botón */
+#Presentacion .cta-btn:hover {
+  background-color: #0097a7;
+  transform: translateY(-2px);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  #Presentacion h1 {
+    font-size: 1.8rem;
+  }
+
+  #Presentacion h2 {
+    font-size: 1rem;
+  }
+
+  #Presentacion img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/*------------------------SECCION SOBRE MI----------------------------------*/
+
+#SobreMi {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fefefe, #e0f7fa);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Contenedor fila: imagen + texto */
+#SobreMi .fila {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Para que en pantallas pequeñas se apilen */
+}
+
+/* Card de la imagen */
+#SobreMi .photo-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#SobreMi .photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Efecto hover en la imagen */
+#SobreMi .photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de texto */
+#SobreMi .intro {
+  flex: 2 1 500px;
+}
+
+/* Título principal */
+#SobreMi .intro h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+/* Párrafos */
+#SobreMi .intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Párrafos pequeños */
+#SobreMi .intro p.small {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Accent strip decorativo */
+#SobreMi .accent-strip {
+  width: 80px;
+  height: 5px;
+  background-color: #00bcd4;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 900px) {
+  #SobreMi .fila {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #SobreMi .photo-card {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  #SobreMi .intro {
+    flex: 1 1 100%;
+  }
+
+  #SobreMi .intro h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/*------------------------HABILIDADES-------------------------------------*/
+#Habilidades {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f0f4f8, #e0f7fa);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Título de la sección */
+#Habilidades h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #00796b;
+}
+
+/* Contenedor de habilidades */
+.habilidades-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* espacio entre tarjetas */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Cada habilidad como “tarjeta” */
+.habilidad {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+}
+
+/* Efecto hover */
+.habilidad:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
+  background-color: #0097a7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .habilidad {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/*------------------------SECCION PROYECTOS----------------------------------*/
+#Proyectos {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fefefe, #d0f0f7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+#Proyectos h1 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #00796b;
+}
+
+/* Contenedor de proyectos */
+.proyectos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card individual */
+.proyecto-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imagen del proyecto */
+.proyecto-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenido del proyecto */
+.proyecto-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.proyecto-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+.proyecto-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.proyecto-content .tecnologias {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Enlaces de proyecto */
+.proyecto-content .enlaces {
+  margin-top: 15px;
+}
+
+.proyecto-content .enlaces a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00bcd4;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.proyecto-content .enlaces a:hover {
+  background-color: #0097a7;
+  transform: translateY(-3px);
+}
+
+/* Efecto hover en card */
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .proyectos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .proyecto-card {
+    max-width: 90%;
+  }
+}
+
+
+/*------------------------CONTACTO----------------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.social-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contact-info {
+  margin-top: 20px;
+  background: #eef;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/*------------------------SECCION FOOTER----------------------------------*/
 
 .footer {
   background-color: #333;
