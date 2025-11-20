@@ -76,202 +76,202 @@ ul li img:hover {
 
 /* Imagen de perfil */
 #Presentacion img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
+  width: 180px;/*define ancho del elemento*/
+  height: 180px;/*define alto del elemento*/
+  object-fit: cover; /*como se ajusta el alto y ancho*/
   border-radius: 50%; /* Hace la imagen circular */
-  border: 4px solid #00bcd4;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  border: 4px solid #00bcd4; /*agrega un borde alrededor*/
+  margin-bottom: 20px;/*agrega un espacio hacia abajo del elemento*/
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2); /*agrega una sombra alrededor del elemento*/
+  transition: transform 0.3s ease; /*que el elemento crezca*/
 }
 
 /* Efecto hover sobre la imagen */
 #Presentacion img:hover {
-  transform: scale(1.5);
+  transform: scale(1.5);/*elemento crece visualmente*/
 }
 
 /* Nombre principal */
 #Presentacion h1 {
-  font-size: 2.2rem;
-  margin: 10px 0 5px;
-  color: #00796b;
+  font-size: 2.2rem; /*tamaño de la fuente*/
+  margin: 10px 0 5px; /*define los margenes*/
+  color: #00796b; /* define el color*/
 }
 
 /* Descripción corta */
 #Presentacion h2 {
-  font-size: 1.2rem;
-  margin: 5px 0 20px;
-  font-weight: 400;
-  color: #555;
+  font-size: 1.2rem; /*tamaño de la fuente*/
+  margin: 5px 0 20px; /*define margenes*/
+  font-weight: 400; /*define grosor del texto*/
+  color: #555;/*define color*/
 }
 
 /* Párrafo descriptivo */
 #Presentacion p {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-  color: #444;
+  font-size: 1rem;/*tamaño de la fuente*/
+  max-width: 600px; /*ancho máximo*/
+  margin: 0 auto 30px; /*margenes*/
+  line-height: 1.6; /*altura entre lineas*/
+  color: #444; /*color*/
 }
 
 /* Botón CTA */
 #Presentacion .cta-btn {
-  display: inline-block;
-  padding: 12px 28px;
-  background-color: #00bcd4;
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(0,188,212,0.3);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /*Permite que un elemento se comporte como un elemento pequeño*/
+  padding: 12px 28px; /*define espacio interno del botón*/
+  background-color: #00bcd4; /*color de fondo del botón*/
+  color: #fff; /*color del texto*/
+  font-weight: 600; /*letra negrita*/
+  text-decoration: none; /*quita la linea  subrayada y que es tipica de los enlaces*/
+  border-radius: 30px; /*Redondea las esquinas tipicas del boton*/
+  box-shadow: 0 4px 12px rgba(0,188,212,0.3); /*agrega sombra*/
+  transition: background-color 0.3s ease, transform 0.3s ease; /**/
 }
 
 /* Efecto hover del botón */
 #Presentacion .cta-btn:hover {
-  background-color: #0097a7;
-  transform: translateY(-2px);
+  background-color: #0097a7; /*color del fondo del boton*/
+  transform: translateY(-2px); /*mueve el elemento hacia arriba*/
 }
 
 /* Responsive para pantallas pequeñas */
 @media (max-width: 600px) {
   #Presentacion h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /*funciona para el tamaño del texto*/
   }
 
   #Presentacion h2 {
-    font-size: 1rem;
+    font-size: 1rem; /*funciona para el tamaño del texto*/
   }
 
   #Presentacion img {
-    width: 140px;
-    height: 140px;
+    width: 140px; /*ancho*/
+    height: 140px; /*alto*/
   }
 }
 
 /*------------------------SECCION SOBRE MI----------------------------------*/
 
 #SobreMi {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #fefefe, #e0f7fa);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  padding: 80px 20px; /*espacio interno*/
+  background: linear-gradient(135deg, #fefefe, #e0f7fa); /*fondo degradado*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*define la fuente del texto*/
+  color: #333; /*color*/
 }
 
 /* Contenedor fila: imagen + texto */
 #SobreMi .fila {
-  display: flex;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: flex-start;
+  display: flex; /*alinea o acomoda los elementos*/
+  gap: 40px; /*genera espacios entre los elementos*/
+  max-width: 1200px; /*ancho maximo*/
+  margin: 0 auto; /*margen de forma automatica*/
+  align-items: flex-start /*alinea los elementos de forma vertical*/;
   flex-wrap: wrap; /* Para que en pantallas pequeñas se apilen */
 }
 
 /* Card de la imagen */
 #SobreMi .photo-card {
-  flex: 1 1 250px;
-  max-width: 300px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 250px; /*La tarjeta puede crecer, encoger y su base es 250px*/ 
+  max-width: 300px; /*No pasa de 300px de ancho*/
+  border-radius: 15px; /*Bordes redondeados*/
+  overflow: hidden;   /*Oculta contenido que se salga del borde*/
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /*Sombra suave*/
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*Animación suave*/
 }
 
 #SobreMi .photo-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 15px;
+  width: 100%; /*Imagen ocupa todo el ancho*/
+  height: auto; /*Mantiene proporción*/
+  display: block; /*Quita espacios debajo de imágenes*/
+  border-radius: 15px; /*Bordes redondeados iguales al contenedor*/  
 }
 
 /* Efecto hover en la imagen */
 #SobreMi .photo-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  transform: translateY(-5px); /**/
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2); /**/
 }
 
 /* Contenedor de texto */
 #SobreMi .intro {
-  flex: 2 1 500px;
+  flex: 2 1 500px; /*Genera espacio*/
 }
 
 /* Título principal */
 #SobreMi .intro h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #00796b;
+  font-size: 2rem; /*Tamaño*/
+  margin-bottom: 20px; /*genera más espacio*/
+  color: #00796b; /*color*/
 }
 
 /* Párrafos */
 #SobreMi .intro p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  color: #444;
+  font-size: 1rem; /*tamaño más grande*/
+  line-height: 1.6; /*altura*/
+  margin-bottom: 15px; /*separación entre parrafos*/
+  color: #444; /*color*/
 }
 
 /* Párrafos pequeños */
 #SobreMi .intro p.small {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 0.95rem; /**texto más pequeño**/
+  color: #555; /*color*/
 }
 
 /* Accent strip decorativo */
 #SobreMi .accent-strip {
-  width: 80px;
-  height: 5px;
-  background-color: #00bcd4;
-  margin-top: 25px;
-  border-radius: 5px;
+  width: 80px; /**/
+  height: 5px; /**/
+  background-color: #00bcd4; /**/
+  margin-top: 25px; /**/
+  border-radius: 5px; /*bordes redondeados*/
 }
 
 /* Responsive para pantallas pequeñas */
 @media (max-width: 900px) {
   #SobreMi .fila {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /*se coloca en columna*/
+    align-items: center; /*centrarlo*/
   }
 
   #SobreMi .photo-card {
-    max-width: 80%;
-    margin-bottom: 30px;
+    max-width: 80%; /*mas grande*/
+    margin-bottom: 30px; /*espacio inferior*/
   }
 
   #SobreMi .intro {
-    flex: 1 1 100%;
+    flex: 1 1 100%; /*ocupa todo el ancho*/
   }
 
   #SobreMi .intro h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /*más pequeño*/
   }
 }
 
 /*------------------------HABILIDADES-------------------------------------*/
 #Habilidades {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #f0f4f8, #e0f7fa);
+  padding: 80px 20px; /*espacio interno*/
+  background: linear-gradient(135deg, #f0f4f8, #e0f7fa); /*fondo degradado*/
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /**/
+  color: #333; /**/
 }
 
 /* Título de la sección */
 #Habilidades h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #00796b;
+  font-size: 2rem; /**/
+  margin-bottom: 40px; /**/
+  color: #00796b; /**/
 }
 
 /* Contenedor de habilidades */
 .habilidades-contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px; /* espacio entre tarjetas */
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex; /**/
+  flex-wrap: wrap; /*permiten que bajen*/
+  justify-content: center; /**/
+  gap: 15px; /* espacio entre habilidades*/
+  max-width: 900px; /**/
+  margin: 0 auto; /**/
 }
 
 /* Cada habilidad como “tarjeta” */
@@ -279,224 +279,273 @@ ul li img:hover {
   background-color: #00bcd4;
   color: #fff;
   padding: 12px 20px;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  cursor: default;
+  border-radius: 25px; /**/
+  font-weight: 600; /**/
+  font-size: 1rem; /**/
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /**/
+  cursor: default; /**/
 }
 
 /* Efecto hover */
 .habilidad:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
-  background-color: #0097a7;
+  transform: translateY(-5px); /**/
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3); /**/
+  background-color: #0097a7; /**/
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   .habilidad {
-    padding: 10px 16px;
-    font-size: 0.9rem;
+    padding: 10px 16px; /**/
+    font-size: 0.9rem; /**/
   }
+}
+/*------------------------Modales----------------------------------*/
+/* Fondo oscuro del modal */
+/* Modal oculto por defecto */
+.modal {
+  display: none;          /* <--- IMPORTANTE: oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+}
+
+/* Solo aparece cuando el hash es #modal */
+.modal:target {
+  display: flex;          /* <--- Aparece AL HACER CLIC */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Caja del modal */
+.modal-contenido {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+}
+
+/* Botón cerrar */
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
 }
 
 /*------------------------SECCION PROYECTOS----------------------------------*/
 #Proyectos {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #fefefe, #d0f0f7);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  text-align: center;
+  padding: 80px 20px; /**/
+  background: linear-gradient(135deg, #fefefe, #d0f0f7); /**/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /**/
+  color: #333; /**/
+  text-align: center; /**/
 }
 
 #Proyectos h1 {
-  font-size: 2.2rem;
-  margin-bottom: 50px;
-  color: #00796b;
+  font-size: 2.2rem; /**/
+  margin-bottom: 50px; /**/
+  color: #00796b; /**/
 }
 
 /* Contenedor de proyectos */
 .proyectos-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex; /**/
+  flex-wrap: wrap; /**/
+  gap: 30px; /**/
+  justify-content: center; /**/
+  max-width: 1200px; /**/
+  margin: 0 auto; /**/
 }
 
 /* Card individual */
 .proyecto-card {
   background-color: #fff;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 300px;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
+  border-radius: 15px; /**/
+  overflow: hidden; /**/
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /**/
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /**/
+  flex: 1 1 300px; /**/
+  max-width: 350px; /**/
+  display: flex; /**/
+  flex-direction: column; /**/
 }
 
 /* Imagen del proyecto */
 .proyecto-card img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 100%; /**/
+  height: auto; /**/
+  display: block; /**/
 }
 
 /* Contenido del proyecto */
 .proyecto-content {
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 20px; /**/
+  flex: 1; /**/
+  display: flex; /**/
+  flex-direction: column; /**/
+  justify-content: space-between; /**/
 }
 
 .proyecto-content h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #00796b;
+  font-size: 1.3rem; /**/
+  margin-bottom: 10px; /**/
+  color: #00796b; /**/
 }
 
 .proyecto-content p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  color: #444;
+  font-size: 0.95rem; /**/
+  line-height: 1.5; /**/
+  margin-bottom: 10px; /**/
+  color: #444; /**/
 }
 
 .proyecto-content .tecnologias {
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 5px;
+  font-size: 0.85rem; /**/
+  color: #555; /**/
+  margin-top: 5px; /**/
 }
 
 /* Enlaces de proyecto */
 .proyecto-content .enlaces {
-  margin-top: 15px;
+  margin-top: 15px; /**/
 }
 
 .proyecto-content .enlaces a {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #00bcd4;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  margin-right: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /**/
+  text-decoration: none; /**/
+  color: #fff; /**/
+  background-color: #00bcd4; /**/
+  padding: 8px 15px; /**/
+  border-radius: 20px; /**/
+  font-size: 0.85rem; /**/
+  margin-right: 10px; /**/
+  transition: background-color 0.3s ease, transform 0.3s ease; /**/
 }
 
 .proyecto-content .enlaces a:hover {
-  background-color: #0097a7;
-  transform: translateY(-3px);
+  background-color: #0097a7; /**/
+  transform: translateY(-3px); /**/
 }
 
 /* Efecto hover en card */
 .proyecto-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  transform: translateY(-5px); /**/
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2); /**/
 }
 
 /* Responsive */
 @media (max-width: 900px) {
   .proyectos-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /**/
+    align-items: center; /**/
   }
   
   .proyecto-card {
-    max-width: 90%;
+    max-width: 90%; /**/
   }
 }
 
 
 /*------------------------CONTACTO----------------------------------*/
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  margin: 0;
-  padding: 20px;
+  font-family: Arial, sans-serif; /**/
+  background: #f5f5f5; /**/
+  margin: 0; /**/
+  padding: 20px; /**/
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px; /**/
+  margin: auto; /**/
+  background: #fff; /**/
+  padding: 25px; /**/
+  border-radius: 8px; /**/
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /**/
 }
 
 h1 {
-  text-align: center;
+  text-align: center; /**/
 }
 
 form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
+  display: block; /**/
+  margin-top: 15px; /**/
+  font-weight: bold; /**/
 }
 
 form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 100%; /**/
+  padding: 10px; /**/
+  margin-top: 5px; /**/
+  border: 1px solid #ccc; /**/
+  border-radius: 5px; 
 }
 
 button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+  margin-top: 20px; /**/
+  width: 100%; /**/
+  padding: 12px; /**/
+  background: #007bff; /**/
+  color: white; /**/
+  border: none; /**/
+  border-radius: 5px; /**/
+  cursor: pointer; /**/
+  font-size: 16px; /**/
 }
 
 button:hover {
-  background: #0056b3;
+  background: #0056b3; /**/
 }
 
 .social-links a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #007bff;
+  margin-right: 10px; /**/
+  text-decoration: none; /**/
+  color: #007bff; /**/
 }
 
 .contact-info {
-  margin-top: 20px;
-  background: #eef;
-  padding: 15px;
-  border-radius: 5px;
+  margin-top: 20px; /**/
+  background: #eef; /**/
+  padding: 15px; /**/
+  border-radius: 5px; /**/
 }
 
 /*------------------------SECCION FOOTER----------------------------------*/
 
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: #333; /**/
+  color: white; /**/
   display: flex;          /* coloca las columnas una al lado de otra */
-  justify-content: space-around;
-  padding: 20px;
-  margin-top: 40px;
+  justify-content: space-around; /**/
+  padding: 20px; /**/
+  margin-top: 40px; /**/
 }
 
 .footer div {
-  text-align: center;
+  text-align: center; /**/
 }
 
+.footer div h3 a {
+  color: white; /**/
+}
+
+.footer div p a {
+  color: white; /**/
+}
+
+
+/*---------------------------Habilidades-----------------*/
 #habilidades {
-  margin-top: 40px;
-  text-align: center;
+  margin-top: 40px; /**/
+  text-align: center; /**/
 }
 
 .habilidades-contenedor {
@@ -504,17 +553,17 @@ button:hover {
   flex-wrap: wrap;      /* permite que bajen a otra línea */
   justify-content: center;
   gap: 15px;            /* espacio entre badges */
-  margin-top: 20px;
+  margin-top: 20px; /**/
 }
 
 .habilidad {
   background-color: #ffdab9; /* papaya */
-  padding: 10px 20px;
+  padding: 10px 20px; /**/
   border-radius: 20px;  /* badge redondo */
-  font-weight: bold;
-  color: black;
-  border: 1px solid #e6a76d;
-  transition: transform 0.2s;
+  font-weight: bold; /**/
+  color: black; /**/
+  border: 1px solid #e6a76d; /**/
+  transition: transform 0.2s; /**/
 }
 
 .habilidad:hover {
